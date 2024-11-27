@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <style>
+        body {
+              background-color: #f9f7fe;
+              margin: 100px auto;
+              font-size: 16px;
+              color: rgb(123, 3, 123);
+              text-transform: capitalize;
+              text-align: center;
+        }
+       .weather-app {
+                  border-top: 5px solid rgb(175, 172, 172);
+                  padding: 30px;
+                  max-width: 600px;
+                  margin: 0 auto;
+                  border-radius: 30px;
+                  background-color: rgb(175, 172, 172);
+    }
+        header {
+            background-color:rgb(175, 172, 172);
+            color: green;
+            text-decoration: underline;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 1em 0;
+           
+        }
+
+        .search-bar input {
+            padding: 0.5em;
+            font-size: 1.5em;
+        }
+
+        .search-bar button {
+            padding: 0.5em 1em;
+            font-size: 1em;
+            background-color:blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .weather-info {
+            text-align: center;
+            margin: 1em 0;
+        }
+        h2{
+            text-align:left;
+            color: black;
+        }
+
+        .temperature {
+            font-size: 4em;
+            color: #333;
+            text-align: right;
+        }
+
+        .details {
+            font-size: 1.2em;
+            color: black;
+            text-align:left;
+        }
+
+        .forecast {
+            display: flex;
+            justify-content: space-around;            
+            margin:2px;
+      }
+
+        .day {
+            color: blue;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 13px;
+            background-color:rgb(175, 172, 172);
+            color: black;
+        }
+        .w{
+            color:blue;
+            text-decoration: underline;
+        }
+        .Fade{
+            color:grey;
+        }
+    </style>
+</head>
+<body>
+ <div class="weather-app">
+    <header>
+        <h1>Welcome to our Weather application</h1>
+    </header>
+    <main>
+        <div class="search-bar">
+            <input type="text" placeholder="Enter city name">
+            <button>SEARCH</button>
+        </div>
+        <div class="weather-info">
+            <h2>Paris</h2>
+            <div class="temperature">
+               
+                <span>☁️12</span>℃
+            </div>
+            <div class="details">
+                <p>Tuesday 14:00, scattered clouds</p>
+                <p>Humidity: <span class="w">66</span>, Wind Speed: 4.3</p>
+            </div>
+        </div>
+        <div class="forecast">
+            <div class="day"><strong >Mon</strong>
+            <br>
+            🌦️
+            <br>
+            15° <span class="Fade">19°</span></div>
+            <div class="day"><strong >Tue</strong>
+            <br>
+            🌦️
+            <br>
+            15° <span class="Fade">19°</span></div>
+            <div class="day"><strong >Wed</strong>
+            <br>
+            🌦️
+            <br>
+            15° <span class="Fade">19°</span></div>
+            <div class="day"><strong >Thu</strong>
+            <br>
+            🌦️
+            <br>
+            15° <span class="Fade">19°</span></div>
+            <div class="day"><strong >Fri</strong><br>
+            🌦️
+            <br>
+            15° <span class="Fade">19°</span></div>
+            <div class="day"> <strong >Sat</strong>  <br>
+            🌦️
+            <br>
+            15° <span class="Fade">19°</span></div>
+            <div class="day"> <strong >Sun</strong> <br>
+            🌦️
+            <br>
+            15° <span class="Fade">19°</span></div>
+      
+    </main>
+    <footer>
+        <p>Coded by <span class="w">Stephen Njenga</span> and is on <span class="w">GitHub</span> and hosted by <span class="w">Netlify</span>.
+        <br>
+        The design was done using <span class="w">Figma</span>.
+        </p>
+    </footer>
+   </div>
+</body>
+</html>
